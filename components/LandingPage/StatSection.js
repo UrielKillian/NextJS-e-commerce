@@ -3,10 +3,10 @@ import { UsersIcon } from "@heroicons/react/outline";
 
 export default function StatSection() {
   return (
-    <div className="relative bg-white">
+    <div className="relative mb-14 bg-white">
       <div className="h-56 bg-indigo-600 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
         <img
-          className="w-full h-full object-cover"
+          className="w-full h-full rounded-md object-cover"
           src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
           alt="Support team"
         />

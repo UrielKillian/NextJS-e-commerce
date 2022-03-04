@@ -91,7 +91,7 @@ export default function LandingLayout({ children }) {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-base inline-flex  font-medium text-white border px-3 py-2 items-center bg-stone-600 rounded-md "
+                  className="text-base inline-flex  font-medium text-white hover:bg-indigo-800 border px-3 py-2 items-center bg-indigo-600 shadow-md rounded-md "
                 >
                   <div className="inline mr-2">
                     <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -120,9 +120,11 @@ export default function LandingLayout({ children }) {
                 <div className="pt-5 pb-6 px-5">
                   <div className="flex items-center justify-between">
                     <div>
-                      <img
+                      <Image
                         className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                        width={120}
+                        height={40}
+                        src={LogoPage}
                         alt="Workflow"
                       />
                     </div>
@@ -135,14 +137,17 @@ export default function LandingLayout({ children }) {
                   </div>
                 </div>
                 <div className="py-6 px-5">
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 gap-4">
                     {navigation.main.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
-                        className="text-base font-medium text-gray-900 hover:text-gray-700"
+                        className="text-base flex font-medium text-gray-900 hover:text-gray-700"
                       >
-                        {item.name}
+                        <div className="inline">
+                          <item.icon className="h-6 w-6" aria-hidden="true" />
+                        </div>
+                        <div className="ml-2">{item.name}</div>
                       </a>
                     ))}
                   </div>

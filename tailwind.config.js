@@ -1,4 +1,5 @@
 const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -23,6 +24,17 @@ module.exports = {
           10: "EFF0F2",
         },
         cyan: colors.cyan,
+        palette: {
+          1: "#3A6344",
+          2: "#291E0B",
+          3: "#FFFFFF",
+          4: "#F1EDEF",
+        },
+      },
+      fontFamily: {
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        Lora: ["Lora", ...defaultTheme.fontFamily.sans],
+        workSans: ["Work Sans", ...defaultTheme.fontFamily.sans],
       },
     },
   },

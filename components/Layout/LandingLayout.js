@@ -25,8 +25,8 @@ import { ChevronDownIcon } from "@heroicons/react/solid";
 
 const navigation = {
   main: [
-    { name: "Inicio", href: "#", icon: InboxIcon },
-    { name: "Catálogo", href: "#", icon: ShoppingCartIcon },
+    { name: "Inicio", href: "/", icon: InboxIcon },
+    { name: "Catálogo", href: "/catalogo", icon: ShoppingCartIcon },
     { name: "Contáctanos", href: "#", icon: ChatAltIcon },
   ],
   social: [

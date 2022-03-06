@@ -27,7 +27,7 @@ const navigation = {
   main: [
     { name: "Inicio", href: "/", icon: InboxIcon },
     { name: "Catálogo", href: "/catalogo", icon: ShoppingCartIcon },
-    { name: "Contáctanos", href: "#", icon: ChatAltIcon },
+    { name: "Contáctanos", href: "/contactanos", icon: ChatAltIcon },
   ],
   social: [
     {
@@ -91,7 +91,7 @@ export default function LandingLayout({ children }) {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-base inline-flex  font-medium text-white hover:bg-indigo-800 border px-3 py-2 items-center bg-indigo-600 shadow-md rounded-md "
+                  className="text-base inline-flex  font-medium text-white hover:bg-green-900 border px-3 py-2 items-center bg-palette-1 shadow-md rounded-md "
                 >
                   <div className="inline mr-2">
                     <item.icon className="h-6 w-6" aria-hidden="true" />
